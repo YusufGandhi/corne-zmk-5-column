@@ -87,13 +87,6 @@ Dengan begitu, Anda hanya perlu mengganti slot saat berpindah perangkat.
 ![special_key_combos.png](docs/chillmin/special_key_combos.png)
 
 
-### Base layer 
-
-This is nothing new, only important thing is the modifier keys, enter end space keys.  
-- Enter keys has layer tap feature, that means holding it will momentarily enble the 1 indexed layer. 
-
- 
-![base layer](docs/chillmin/base_col_md.png)
 
 ### Number and Symbols Layer 
 
