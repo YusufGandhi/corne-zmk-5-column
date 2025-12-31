@@ -136,11 +136,11 @@
             flavor = "tap-preferred";
         };
 
-        TAP_DANCE: TAP_DANCE {
+        TAP_DANCE_BACKSPACE_TOGGLE: TAP_DANCE_BACKSPACE_TOGGLE {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE";
+            label = "TAP_DANCE_BACKSPACE_TOGGLE";
             #binding-cells = <0>;
-            bindings = <&none>, <&to 1>;
+            bindings = <&kp BACKSPACE>, <&to 1>;
         };
     };
 
@@ -149,10 +149,10 @@
 
         qwerty_layer {
             bindings = <
-&trans  &kp Q    &kp W           &kp E               &kp R             &kp T           &kp Y        &kp U                    &kp I                &kp O            &kp P            &trans
-&trans  &lt 2 A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H        &mt RIGHT_SHIFT J        &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &lt 5 SEMICOLON  &trans
-&trans  &kp Z    &kp X           &kp C               &kp V             &kp B           &kp N        &kp M                    &kp COMMA            &kp DOT          &kp FSLH         &trans
-                                 &kp BACKSPACE       &kp LEFT_GUI      &lt 3 ESCAPE    &lt 2 ENTER  &mt RIGHT_COMMAND SPACE  &TAP_DANCE
+&trans  &kp Q    &kp W           &kp E               &kp R             &kp T           &kp Y        &kp U                    &kp I                        &kp O            &kp P            &trans
+&trans  &lt 2 A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G           &kp H        &mt RIGHT_SHIFT J        &mt RIGHT_CONTROL K          &mt RIGHT_ALT L  &lt 5 SEMICOLON  &trans
+&trans  &kp Z    &kp X           &kp C               &kp V             &kp B           &kp N        &kp M                    &kp COMMA                    &kp DOT          &kp FSLH         &trans
+                                 &kp BACKSPACE       &kp LEFT_GUI      &lt 3 ESCAPE    &lt 2 ENTER  &mt RIGHT_COMMAND SPACE  &TAP_DANCE_BACKSPACE_TOGGLE
             >;
         };
 
