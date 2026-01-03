@@ -186,10 +186,10 @@
 
         vim_layer {
             bindings = <
-&trans  &none  &none  &kp LA(RIGHT)               &kp LG(RIGHT_ARROW)  &none           &none     &kp PAGE_UP  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LG(LEFT_ARROW)  &trans
-&trans  &none  &none  &mt LEFT_CONTROL PAGE_DOWN  &kp LEFT_SHIFT       &none           &kp LEFT  &kp DOWN     &kp UP            &kp RIGHT          &kp SQT             &trans
-&trans  &none  &none  &none                       &none                &kp LA(LEFT)    &none     &none        &none             &none              &kp SLASH           &trans
-                      &trans                      &trans               &kp ENTER       &trans    &trans       &trans
+&trans  &none  &none  &kp LA(RIGHT)               &kp LG(RIGHT_ARROW)  &none           &none     &kp PAGE_UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LG(LEFT_ARROW)  &trans
+&trans  &none  &none  &mt LEFT_CONTROL PAGE_DOWN  &kp LEFT_SHIFT       &none           &kp LEFT  &kp DOWN           &kp UP            &kp RIGHT          &kp SQT             &trans
+&trans  &none  &none  &none                       &none                &kp LA(LEFT)    &none     &kp LA(LC(LG(M)))  &none             &none              &kp SLASH           &trans
+                      &trans                      &trans               &kp ENTER       &trans    &trans             &trans
             >;
         };
 
