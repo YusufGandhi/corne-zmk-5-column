@@ -207,19 +207,19 @@
 
         num_sym_layer {
             bindings = <
-&trans  &kp LG(TAB)  &trans           &trans        &trans             &trans    &to 2      &trans             &trans        &kp LBKT          &kp RBKT  &trans
+&trans  &kp LG(TAB)  &trans           &trans        &trans             &trans    &kp EQUAL  &trans             &trans        &kp LBKT          &kp RBKT  &trans
 &trans  &kp N1       &mt LEFT_ALT N2  &mt RCTRL N3  &mt LEFT_SHIFT N4  &kp N5    &kp N6     &mt LEFT_SHIFT N7  &mt RCTRL N8  &mt RIGHT_ALT N9  &kp N0    &trans
-&trans  &kp GRAVE    &trans           &trans        &trans             &trans    &kp EQUAL  &trans             &kp MINUS     &trans            &trans    &trans
+&trans  &kp GRAVE    &trans           &trans        &trans             &trans    &kp PLUS   &trans             &kp MINUS     &trans            &trans    &trans
                                       &trans        &trans             &trans    &trans     &trans             &to 0
             >;
         };
 
         vim_layer {
             bindings = <
-&trans  &none  &none             &kp LA(RIGHT)               &kp LG(RIGHT_ARROW)                &none                &none     &kp PAGE_UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LG(LEFT_ARROW)  &trans
-&trans  &none  &mt LEFT_ALT F12  &mt LEFT_CONTROL PAGE_DOWN  &mt LEFT_SHIFT LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT))    &kp LEFT  &kp DOWN           &kp UP            &kp RIGHT          &kp SQT             &trans
-&trans  &none  &none             &none                       &none                              &kp LA(LEFT)         &none     &kp LA(LC(LG(M)))  &none             &none              &kp SLASH           &trans
-                                 &trans                      &trans                             &kp ENTER            &trans    &trans             &trans
+&trans  &none  &none             &kp LA(RIGHT)               &kp LG(RIGHT_ARROW)                &none                             &none     &kp PAGE_UP  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LG(LEFT_ARROW)  &trans
+&trans  &none  &mt LEFT_ALT F12  &mt LEFT_CONTROL PAGE_DOWN  &mt LEFT_SHIFT LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT))                 &kp LEFT  &kp DOWN     &kp UP            &kp RIGHT          &kp SQT             &trans
+&trans  &none  &none             &none                       &none                              &kp LA(LEFT)                      &none     &kp M        &none             &none              &kp SLASH           &trans
+                                 &trans                      &trans                             &mt LC(LA(LEFT_COMMAND)) ENTER    &trans    &trans       &trans
             >;
         };
 
