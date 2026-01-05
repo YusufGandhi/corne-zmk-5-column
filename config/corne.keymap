@@ -161,6 +161,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        LAYER_TAP_DANCE_1: LAYER_TAP_DANCE_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_TAP_DANCE_1";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&to 5>;
+
+            tapping-term-ms = <300>;
+        };
     };
 
     keymap {
@@ -168,10 +177,10 @@
 
         qwerty_layer {
             bindings = <
-&trans  &kp Q    &kp W           &kp E               &kp R             &kp T                             &kp Y                &kp U                    &kp I                        &kp O            &kp P            &trans
-&trans  &lt 2 A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(LA(LC(LEFT_COMMAND))) G    &kp H                &mt RIGHT_SHIFT J        &mt RIGHT_CONTROL K          &mt RIGHT_ALT L  &lt 4 SEMICOLON  &trans
-&trans  &kp Z    &kp X           &kp C               &kp V             &kp B                             &kp N                &kp M                    &kp COMMA                    &kp DOT          &kp FSLH         &trans
-                                 &kp BACKSPACE       &kp LEFT_GUI      &lt 3 ESCAPE                      &LAYER_HOLD_TAP 1 2  &mt RIGHT_COMMAND SPACE  &TAP_DANCE_BACKSPACE_TOGGLE
+&trans  &kp Q    &kp W           &kp E               &kp R             &kp T                             &kp Y               &kp U                    &kp I                &kp O            &kp P            &trans
+&trans  &lt 2 A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(LA(LC(LEFT_COMMAND))) G    &kp H               &mt RIGHT_SHIFT J        &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &lt 4 SEMICOLON  &trans
+&trans  &kp Z    &kp X           &kp C               &kp V             &kp B                             &kp N               &kp M                    &kp COMMA            &kp DOT          &kp FSLH         &trans
+                                 &lt 1 BACKSPACE     &kp LEFT_GUI      &lt 3 ESCAPE                      &LAYER_TAP_DANCE_1  &mt RIGHT_COMMAND SPACE  &mo 2
             >;
         };
 
