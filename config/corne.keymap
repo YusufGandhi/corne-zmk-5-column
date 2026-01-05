@@ -131,6 +131,12 @@
             bindings = <&kp GRAVE>;
             key-positions = <28 26>;
         };
+
+        SLEEP {
+            bindings = <&kp LC(LG(Q))>;
+            key-positions = <16 17>;
+            layers = <2>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -195,7 +201,7 @@
 
         vim_layer {
             bindings = <
-&trans  &none  &none             &kp LA(RIGHT)               &kp LG(RIGHT_ARROW)                &kp LC(LG(Q))        &none     &kp PAGE_UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LG(LEFT_ARROW)  &trans
+&trans  &none  &none             &kp LA(RIGHT)               &kp LG(RIGHT_ARROW)                &none                &none     &kp PAGE_UP        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LG(LEFT_ARROW)  &trans
 &trans  &none  &mt LEFT_ALT F12  &mt LEFT_CONTROL PAGE_DOWN  &mt LEFT_SHIFT LC(LA(LEFT_ARROW))  &kp LC(LA(RIGHT))    &kp LEFT  &kp DOWN           &kp UP            &kp RIGHT          &kp SQT             &trans
 &trans  &none  &none             &none                       &none                              &kp LA(LEFT)         &none     &kp LA(LC(LG(M)))  &none             &none              &kp SLASH           &trans
                                  &trans                      &trans                             &kp ENTER            &trans    &trans             &trans
