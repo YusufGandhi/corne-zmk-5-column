@@ -150,7 +150,7 @@
 
         BSPACE {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 11>;
+            key-positions = <10 9>;
         };
     };
 
