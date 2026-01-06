@@ -145,7 +145,7 @@
 
         BACKTICK_2 {
             bindings = <&kp GRAVE>;
-            key-positions = <28 27>;
+            key-positions = <28 29>;
         };
 
         BSPACE {
