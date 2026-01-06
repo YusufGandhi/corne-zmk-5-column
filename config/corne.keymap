@@ -140,12 +140,12 @@
 
         TAB_3 {
             bindings = <&kp TAB>;
-            key-positions = <16 17>;
+            key-positions = <16 15>;
         };
 
         BACKTICK_2 {
             bindings = <&kp GRAVE>;
-            key-positions = <28 29>;
+            key-positions = <28 27>;
         };
 
         BSPACE {
