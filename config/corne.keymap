@@ -140,7 +140,7 @@
 
         TAB_3 {
             bindings = <&kp TAB>;
-            key-positions = <15 16>;
+            key-positions = <16 17>;
         };
 
         BACKTICK_2 {
