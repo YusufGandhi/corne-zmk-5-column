@@ -38,7 +38,7 @@
         };
 
         combo_enter {
-            bindings = <&kp ENTER>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <21 22>;
         };
 
