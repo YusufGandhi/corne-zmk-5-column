@@ -37,19 +37,9 @@
             key-positions = <13 14 15>;
         };
 
-        combo_shift {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <25 26>;
-        };
-
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <21 22>;
-        };
-
-        combo_rshift {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <33 34>;
         };
 
         exclm {
@@ -146,11 +136,6 @@
         BACKTICK_2 {
             bindings = <&kp GRAVE>;
             key-positions = <28 27>;
-        };
-
-        BSPACE {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <10 9>;
         };
     };
 
