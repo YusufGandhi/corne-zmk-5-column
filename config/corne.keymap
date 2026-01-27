@@ -172,7 +172,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LAYER_TAP_DANCE_1";
             #binding-cells = <0>;
-            bindings = <&lt 1 ENTER>, <&to 5>;
+            bindings = <&mo 2>, <&to 5>;
         };
     };
 
@@ -181,10 +181,10 @@
 
         qwerty_layer {
             bindings = <
-&trans  &kp Q    &kp W           &kp E               &kp R             &kp T                             &kp Y               &kp U                    &kp I                &kp O            &kp P            &trans
-&trans  &lt 2 A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(LA(LC(LEFT_COMMAND))) G    &kp H               &mt RIGHT_SHIFT J        &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &lt 4 SEMICOLON  &trans
-&trans  &kp Z    &kp X           &kp C               &mt LEFT_ALT V    &mt LEFT_CONTROL B                &kp N               &kp M                    &kp COMMA            &kp DOT          &kp FSLH         &trans
-                                 &kp BACKSPACE       &kp LEFT_GUI      &lt 1 ESCAPE                      &LAYER_TAP_DANCE_1  &mt RIGHT_COMMAND SPACE  &mo 2
+&trans  &kp Q    &kp W           &kp E               &kp R             &kp T                             &kp Y        &kp U                    &kp I                &kp O            &kp P            &trans
+&trans  &lt 2 A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(LA(LC(LEFT_COMMAND))) G    &kp H        &mt RIGHT_SHIFT J        &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &lt 4 SEMICOLON  &trans
+&trans  &kp Z    &kp X           &kp C               &mt LEFT_ALT V    &mt LEFT_CONTROL B                &kp N        &kp M                    &kp COMMA            &kp DOT          &kp FSLH         &trans
+                                 &kp BACKSPACE       &kp LEFT_GUI      &lt 1 ESCAPE                      &lt 1 ENTER  &mt RIGHT_COMMAND SPACE  &LAYER_TAP_DANCE_1
             >;
         };
 
